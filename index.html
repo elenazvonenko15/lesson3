@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var userAge = +prompt('Введите ваш возраст:')
+		var message;
+		if(userAge !== userAge) {
+			message = 'Вы ввели невалидное значение';
+		}
+		else if (userAge % 10 === 0 || userAge % 10 >= 5 ||  userAge % 100 >= 5 && userAge % 100 <= 14 ) {
+			message = `${userAge} лет`;
+		}
+		else if (userAge % 10 === 1){
+			message = `${userAge} год`;
+		}
+		else if (userAge % 10 <= 4){
+			message = `${userAge} года`;
+		}
+		alert(message);
+	</script>
+</body>
+</html>
+
